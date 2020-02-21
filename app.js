@@ -48,13 +48,13 @@ app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
 app.get("/addCourse", addCourse.viewAddCourse);
-app.get("/course=:courseName", course.view);
+app.get("/course/=:courseName", course.view);
 app.get("/findTeammates", team.view);
-app.get("/groupPage=:groupName", group.view);
+app.get("/groupPage/=:groupName", group.view);
 app.get('/addComment', add.addComment);
 app.get("/homepage", home.view);
 app.get("/Success", success.viewSuccess);
-app.get('/groupPage=:groupName/addTeammate', addTeamMemberPage.view);
+app.get('/groupPage/=:groupName/addTeammate', addTeamMemberPage.view);
 app.get('/addTeammateMethod', addTeammate.addTeammateMethod);
 app.get('/:courseName/addGroup', addGroup.viewAddGroup);
 app.get("/:courseName/addGroup/Success", success.viewGroupSuccess);
