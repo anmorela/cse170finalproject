@@ -29,8 +29,6 @@ exports.addComment = function(req, res) { 
             console.log(addData.groups[i].comments[counter]);
 
             res.render('groupPage', addData.groups[i]);
-
-
         }
 
 

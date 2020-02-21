@@ -2,8 +2,8 @@
 {
     "groups": [
       {
-		"course": "COGS120",
-		"title": "GroupA",
+        "course": "COGS120",
+		    "title": "GroupA",
         "img": "https://66.media.tumblr.com/395c6fb0d6b47890a20c7b6e6e8c914e/tumblr_p5gjesVOjv1w9oylko1_1280.png",
         "comments": [
           {}],
