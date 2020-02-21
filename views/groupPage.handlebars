@@ -17,32 +17,37 @@
 			<button id="addTeammate" class="btn btn-default btn-md" onclick="window.location.href='/groupPage={{title}}/addTeammate'">Add Team Member</button>
 		</nav>
 
+
+
 		<h1>{{title}}</h1><br>
-
 		<h3>Uploaded Work</h3>
+		<!--Button to Upload Work-->
+		<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+		<p><label for="file" style="cursor: pointer;">Click Here To Upload Your Work</label></p>
+		<script>
+			var loadFile = function(event) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(event.target.files[0]);
+			};
+		</script>
 
+		<!--Comment Button and Image Output-->
 		<div class="thumbnail">
-		 	<img src="{{img}}" class="img-responsive img-rounded">
-
+			<h3>Give Feedback!</h3>
 			<div class="thumbnail">
 			<p id="commentList">{{comments}}</p>
 			</div>
-			
-			<form id="addCommentForm" role="form" method="get" action="/addComment">
-				<h3>Give Feedback!</h3>
+			<form id="addCommentForm" role="form" method="get" action="/addComment">	
 	    		<div class="form-group">
+				<p><img id="output" class="img-responsive" /></p>
 	      			<label for="comment">Feedback:</label>
 	      			<input type="text" class="form-control" id="comment" placeholder="Your feedback here" name="comment">
 	   		 	</div>
-
 				<input type="hidden" name="grouptitle" value="{{title}}">
 				<input type="hidden" name="groupimg" value="{{img}}">
-
 	    		<input type="submit" id="submitBtn" class="btn btn-default" value="Leave comment"></input>
 			</form>
-
 		</div>
-
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
