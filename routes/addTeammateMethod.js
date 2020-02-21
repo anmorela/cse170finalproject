@@ -6,7 +6,7 @@ exports.addTeammateMethod = function(req,res) {
 	var index;
 
 	//Loop that finds the index of the classmate object to be added to the group
-	for (int i=0; i<classList.length; i++){
+	for (var i=0; i<classList.length; i++){
 		if ((classList[i].name).equals(studentName)){
 			index=i;
 		}

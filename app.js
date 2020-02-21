@@ -18,6 +18,7 @@ var home = require("./routes/homepage");
 var success = require("./routes/Success");
 var addTeamMemberPage = require('./routes/addTeammate');
 var addTeammate = require('./routes/addTeammateMethod');
+var addGroup = require('./routes/addGroup');
 // Example route
 // var user = require('./routes/user');
 
@@ -55,6 +56,8 @@ app.get("/homepage", home.view);
 app.get("/Success", success.viewSuccess);
 app.get('/groupPage=:groupName/addTeammate', addTeamMemberPage.view);
 app.get('/addTeammateMethod', addTeammate.addTeammateMethod);
+app.get('/:courseName/addGroup', addGroup.viewAddGroup);
+app.get("/:courseName/addGroup/Success", success.viewGroupSuccess);
 
 
 http.createServer(app).listen(app.get('port'), function(){
