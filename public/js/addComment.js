@@ -13,11 +13,11 @@ function initializePage() {
 
   if ($("#commentList").text() == "[object Object]") {
     console.log("WORKS");
-    $("#commentList").html("<h5>No Comments To Display</h5>");
+    $("#commentList").html("<p><h5>No Feedback To Display</h5></p>");
   }
 
   else {
-    var formatComment = $("#commentList").text().replace(/,/g, ' ').replace('[object Object]', 'Comments: ');
+    var formatComment = $("#commentList").text().replace(/,/g, ' ').replace('[object Object]', 'Feedback: ');
     $("#commentList").text(formatComment);
   }
   

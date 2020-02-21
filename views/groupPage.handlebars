@@ -11,7 +11,7 @@
 	<div class="container">
 		<nav>
 				<!-- Button to return to the course page of that group -->
-			<button id="backCourse" class="btn btn-default btn-md" onclick="window.location.href='/course={{course}}'">Back</button>
+			<button id="backCourse" class="btn btn-default btn-md" onclick="window.location.href='/course={{course}}'"><-</button>
 
 			<!-- Button to find teammates -->
 			<button id="addTeammate" class="btn btn-default btn-md" onclick="window.location.href='/groupPage={{title}}/addTeammate'">Add Team Member</button>
@@ -27,16 +27,16 @@
 			<p id="commentList">{{comments}}</p>
 
 			<form id="addCommentForm" role="form" method="get" action="/addComment">
-				<h3>Add a Critique</h3>
+				<h3>Give Feedback!</h3>
 	    		<div class="form-group">
-	      			<label for="comment">Comment:</label>
-	      			<input type="text" class="form-control" id="comment" placeholder="Comment" name="comment">
+	      			<label for="comment">Feedback:</label>
+	      			<input type="text" class="form-control" id="comment" placeholder="Your feedback here" name="comment">
 	   		 	</div>
 
 				<input type="hidden" name="grouptitle" value="{{title}}">
 				<input type="hidden" name="groupimg" value="{{img}}">
 
-	    		<input type="submit" id="submitBtn" class="btn btn-default" value="Add the comment"></input>
+	    		<input type="submit" id="submitBtn" class="btn btn-default" value="Leave comment"></input>
 			</form>
 
 		</div>
