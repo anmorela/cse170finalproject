@@ -10,23 +10,25 @@
 </head>
 <body>
 	<nav>
-		<h2 id="addTeamTitle">Add Teammates</h2>
-		   	
+		<button id="doneAdding" class="btn btn-default btn-md" style="float: left;">Back</button>
 	</nav>
+	<div>
+		<form id="addMemberForm" role="form" method="get">
+			<input type="text" id="userName" placeholder="Name" name="userName"><br>
+			<input type="text" id="userEmail" placeholder="Email" name="userEmail"><br>
+			<input type="submit" name="submitMember" value="Add Group Member"
+			  onclick='function() {
+			  	alert("You have added a new group member");
+			  	var pathArray = window.location.pathname.split("/");
+				var group = pathArray[pathArray.length-2];
+				var newURL = "/groupPage/"+group;
+				window.location.href=newURL;
+			  }'>
+		</form>
+	</div>
 
-	<!-- Display all the people in your "course" to add to your group -->
-	{{#each classmates}}
-		<div class="memberContainer">
-			<p id="{{name}}Line"> {{name}} 
-				<button id="addMember" class="btn btn-default btn-md" style="float: right;" onclick="addClassmate({{name}});">Add</button>
-			</p>
-		</div>
-	{{/each}}
 
-	<!-- Button to end adding group members -->
-	<button id="doneAdding" class="btn btn-default btn-md" style="position: absolute; bottom: 20px; right: 10px;">Done</button>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/addTeammate.js"></script>
 </body>
 </html>

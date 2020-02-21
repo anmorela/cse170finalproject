@@ -18,22 +18,14 @@
       		</button>-->
       		<button id="plusIcon" class="btn btn-default btn-md" onclick="window.location.href='addCourse'">Add Course</button>
 
+
 				<p id="appTitle">TeamUp</p> 
 
-	   		</div>
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    	<div class="collapse navbar-collapse" style="border-color: #aeadac" id="collapse-1">
-	    		<ul class="nav navbar-nav">
-	    			{{#each courses}}
-	                    <li><a href="course={{title}}">{{title}}</a></li>
-	                {{/each}}
-	            </ul>
-	        </div>
 	    </nav>
 	</div>
 	<div class="content container-sm">
 		{{#each courses}}
-			<a href="course={{title}}">
+			<a href="course/{{title}}">
 				<div class="classes" id="{{id}}">
 					<img src="images/chevron.png" alt="chevron icon" class="chevron"/>
 				  <p class="course_title">{{title}}</p>

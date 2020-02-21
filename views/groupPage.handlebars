@@ -11,12 +11,48 @@
 	<div class="container">
 		<nav>
 				<!-- Button to return to the course page of that group -->
-			<button id="backCourse" class="btn btn-default btn-md" onclick="window.location.href='/course={{course}}'"><-</button>
+			<button id="backCourse" class="btn btn-default btn-md" onclick="window.location.href='/course/{{course}}'">Back</button>
+
 
 			<!-- Button to find teammates -->
-			<button id="addTeammate" class="btn btn-default btn-md" onclick="window.location.href='/groupPage={{title}}/addTeammate'">Add Team Member</button>
-		</nav>
+		<div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="position: absolute; top: 7px; right: 7px;">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header text-center">
+		        <h4 class="modal-title w-100 font-weight-bold">Add A New Member To Your Group! <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative; top: 3px;">
+		          		<span aria-hidden="true">&times;</span>
+		        	</button>
+		    	</h4>
+		        
+		      </div>
+		      <form id="addTeammateForm" role="form" method="get" action='/addNewTeammate'>
+			      <div class="modal-body mx-3">
+			        <div class="md-form mb-5">
+			          <i class="fas fa-user prefix grey-text"></i>
+			          <input type="text" id="form3" class="form-control validate" placeholder="John Doe" name="name">
+			          <label data-error="wrong" data-success="right" for="form3">Name</label>
+			        </div><br>
 
+			        <div class="md-form mb-4">
+			          <i class="fas fa-envelope prefix grey-text"></i>
+			          <input type="email" id="form2" class="form-control validate" placeholder= "johndoe123@gmail.com" name="email">
+			          <label data-error="wrong" data-success="right" for="form2">Email</label>
+			        </div>
+			        <input type="hidden" name="groupTitleMember" value="{{title}}">
+			      </div>
+			      <div class="modal-footer d-flex justify-content-center">
+			      	
+			        <input type="submit" class="btn btn-indigo" id="addMember"></input>
+			      </div>
+			    </div>
+		    </form>
+		  </div>
+		</div>
+
+		<div class="text-center">
+		  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalSubscriptionForm">Add New Group Member</a>
+		</div>
+		</nav>
 
 
 		<h1>{{title}}</h1><br>
@@ -53,6 +89,5 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
     <script src="/js/addComment.js"></script>
-    <script src="/js/addTeammate.js"></script>
 </body>
 </html>
