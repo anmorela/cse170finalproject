@@ -12,18 +12,18 @@
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
 
-	<title>Log In Page</title>
+	<title>Login</title>
 </head>
 
-<body>
+<body class="loginPage">
 	<div class= "container">
 		<div class="login">
-			<h1 id="title"> TeamUp </h1>
+			<!-- <h1 id="title"> TeamUp </h1> -->
 			<img id="logo" class='img-responsive' src="/images/logo.png"/>
-			<h3 id="welcome">Welcome!</h3>
-			<p class="facebookLogin">Please login through Facebook
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-			</fb:login-button>
+			<h3 id="welcome">WELCOME!</h3>
+			<p class="facebookLogin">Please login through Facebook!</p>
+			<p><div id="facebookButton"><p><fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button></p></div></p>
 			<p id="homepage" style="display: none">Click <a href ="/homepage">here</a> to access your courses</p>
 			</p>
 		</div>

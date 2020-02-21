@@ -8,29 +8,29 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/CoursePage.css" rel="stylesheet">
 </head>
-<body>
+<body id="homepage">
 	<div class="container">
 	<nav>
 		<button id="goHome" onclick="window.location.href='/homepage'">Back</button>
 	</nav>
 	
 
-		<h1>Add Course</h1>
+		<h3 style="font-family: thin">Add Course</h3>
 		
 		<br>
 
 		<div class="thumbnail">
 		 	
-			 <form id="addCourseForm" role="form" method="get" action="/success">
-				<h3>Enter Course Info</h3>
+			<form id="addCourseForm" role="form" method="get" action="/success">
+				<h3 style="font-family: thin">Enter Course Info</h3>
 	    		<div class="form-group">
 	      			<label for="courseTitle">Course Title:</label>
-	      			<input type="text" class="form-control" id="courseTitle" placeholder="Title" name="courseTitle">
+	      			<input type="text" class="form-control" id="courseTitle" placeholder="Course Title (e.g. COGS120)" name="courseTitle">
 	   		 	</div>
 
 				<div class="form-group">
 	      			<label for="professor">Professor:</label>
-	      			<input type="text" class="form-control" id="professor" placeholder="Scott Klemmer" name="professor">
+	      			<input type="text" class="form-control" id="professor" placeholder="Professor Name (e.g. Scott Klemmer)" name="professor">
 	   		 	</div>
 
 

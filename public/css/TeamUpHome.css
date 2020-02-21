@@ -1,31 +1,5 @@
-body{
-	background-color: white;
-}
-
-.classes {
-    color: #979797 !important;
-}
-
-#appTitle{
-    text-align: center;
-    padding-top: 5px;
-    font-size: 28px;
-    color: #979797;
-}
-.classes   {
-    border: 1px solid;
-    border-radius: 15px;
-    margin: 23px 15px;
-    padding: 28px auto 27px 14px;
-    position: relative;
-}
-.course_title   {
-    margin: 28px auto 0 14px;
-    font-size: 22px;
-}
-.professor   {
-    margin: 0px auto 27px 14px;
-    font-size: 15px;
+body {
+    background-color: white;
 }
 
 .chevron   {
@@ -36,36 +10,120 @@ body{
     top: 39%;
     left: 94%;
 }
-#plusIcon{
-    float: right;
-    position: relative; 
-    top: 9px; 
-    right: 19px;
-    background-color: #333!important;
+
+.classes {
+    color: #aeadac !important;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 23px 15px;
+    padding: 28px auto 27px 14px;
+    position: relative;
 }
+
+.content {
+    margin-top: 70px;
+}
+
+.course_title   {
+    margin: 28px auto 0 14px;
+    font-size: 22px;
+}
+
+.facebookLogin {
+    text-align: center;
+    font-family: thin;
+    color: #aeadac;
+}
+
+.loginPage {
+    background-color: #334355;
+}
+
+.nav li {
+    display: inline;
+    color: #aeadac;
+}
+
 .navbar, .navbar-inverse {
     border-radius: 0;
     border: none;
     margin-bottom: 0;
     min-height: 50px;
-    color: white;
+    color: #aeadac;
 }
 
-.nav li {
-    display: inline;
-    color: white;
+.navbar-header {
+    font-family: thin;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    background-color: #aeadac;
+    transition: 0.7s all linear;
+    height: 100%;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: white;
-    font-family: Lato;
+    color: #aeadac;
+    font-family: thin;
     font-size: 1.7em;
     font-weight: 300;
     padding: 30px 25px 33px 25px;
 }
 
-.navbar-inverse .navbar-nav li a:hover {
-    background-color: white;
-    transition: 0.7s all linear;
-    height: 100%;
+.professor   {
+    margin: 0px auto 27px 14px;
+    font-size: 15px;
+}
+
+#appTitle{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 28px;
+    color: #aeadac;
+}
+
+#facebookButton {
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#homepage {
+    text-align: center;
+    font-family: thin;
+    color: #aeadac;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 25%;
+}
+
+#menu {
+    background-color: #aeadac;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#plusIcon{
+    float: right;
+    position: relative; 
+    top: 9px; 
+    right: 19px;
+    background-color: #aeadac;
+}
+
+#title {
+    text-align: center;
+}
+
+#welcome {
+    text-align: center;
+    font-family: thin;
+    color: #aeadac
 }
