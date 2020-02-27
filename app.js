@@ -51,6 +51,7 @@ app.get("/addCourse", addCourse.viewAddCourse);
 app.get("/course/:courseName", course.view);
 app.get("/findTeammates", team.view);
 app.get("/groupPage/:groupName/page_A", group.view);
+app.get("/groupPage/:groupName", group.view);
 app.get('/addComment', add.addComment);
 app.get("/homepage", home.view);
 app.get("/Success", success.viewSuccess);
