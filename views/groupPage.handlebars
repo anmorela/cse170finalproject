@@ -30,12 +30,13 @@
 		<h1>{{title}}</h1><br>
 		<h3>Uploaded Work</h3>
 		<!--Button to Upload Work-->
-		<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+		<p><input type="file"  accept="image/*" name="image" id="file" onclick="clickCounter()" onchange="loadFile(event)" style="display: none;"></p>
 		<p><label for="file" style="cursor: pointer;">Click Here To Upload Your Work</label></p>
 		<script>
 			var loadFile = function(event) {
 			var image = document.getElementById('output');
 			image.src = URL.createObjectURL(event.target.files[0]);
+			//image.src = "https://miro.medium.com/max/1280/1*chMOsXhcua6_J18z7lNRXA.png";
 			};
 		</script>
 
@@ -47,7 +48,9 @@
 			</div>
 			<form id="addCommentForm" role="form" method="get" action="/addComment">	
 	    		<div class="form-group">
-				<p><img id="output" class="img-responsive" /></p>
+
+				<p><img id="output" class="img-responsive"/></p>
+
 	      			<label for="comment">Feedback:</label>
 	      			<input type="text" class="form-control" id="comment" placeholder="Your feedback here" name="comment">
 	   		 	</div>
@@ -91,8 +94,9 @@
 		  </div>
 		</div>
 
+		<br><br><br>
 		<div class="text-center">
-		  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalSubscriptionForm" style="position: absolute; bottom: 7px; right: 7px;">Add Teammember</a>
+		  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalSubscriptionForm" style="position: relative; float: right; bottom: 7px; right: 7px;">Add Teammember</a>
 		</div>
 	</div>
 

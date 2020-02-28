@@ -23,5 +23,8 @@ function initializePage() {
     $("#commentList").html(formatComment);
 
   }
+
   
 }
+
+
