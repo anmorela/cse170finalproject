@@ -158,7 +158,8 @@
 		<script>
 			var loadFile = function(event) {
 			var image = document.getElementById('output');
-			image.src = URL.createObjectURL(event.target.files[0]);
+			//image.src = URL.createObjectURL(event.target.files[0]);
+			image.src = "https://miro.medium.com/max/1280/1*chMOsXhcua6_J18z7lNRXA.png";
 
 			console.log(image.src);
 			};
@@ -172,7 +173,7 @@
 			</div>
 			<form id="addCommentForm" role="form" method="get" action="/addComment">	
 	    		<div class="form-group">
-				<p><img id="output" class="img-responsive" /></p>
+				<p><img id="output" class="img-responsive" src="https://miro.medium.com/max/1280/1*chMOsXhcua6_J18z7lNRXA.png"/></p>
 	      			<label for="comment">Feedback:</label>
 	      			<input type="text" class="form-control" id="comment" placeholder="Your feedback here" name="comment">
 	   		 	</div>
