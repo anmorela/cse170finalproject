@@ -4,7 +4,7 @@ h1, h2, h3, h4 {
 
 #homepage {
     font-family: thin;
-    color: #aeadac;
+	color: #aeadac;
 }
 
 .navbar, .navbar-inverse {
@@ -29,10 +29,11 @@ h1, h2, h3, h4 {
 }
 
 .navbar-inverse .navbar-nav li a:hover {
-	background-color: #444444;
+	background-color: #334255;;
 	transition: 0.7s all linear;
 	height: 100%;
 }
+
 
 #goHome, #backCourse {
 	position: relative;
