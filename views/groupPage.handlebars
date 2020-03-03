@@ -6,18 +6,20 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/CoursePage.css" rel="stylesheet">
-</head>
+
 	<!-- Google Analytics -->
 	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-159233941-1', 'auto');
-	ga('send', 'pageview');
+		ga('create', 'UA-159497797-1', 'auto');
+		ga('require', 'GTM-KF48SKT');
+		ga('send', 'pageview');
 	</script>
 	<!-- End Google Analytics -->
+</head>
 <body>
 	{{#if viewAlt}}
 
@@ -97,7 +99,7 @@
 
 		<br><br><br>
 		<div class="text-center">
-		  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalSubscriptionForm" style="position: relative; float: right; bottom: 7px; right: 7px;">Add Teammember</a>
+		  <a href="" class="btn btn-default btn-rounded mb-4" id="addTeammateBtn" data-toggle="modal" data-target="#modalSubscriptionForm" style="position: relative; float: right; bottom: 7px; right: 7px;">Add Teammate!</a>
 		</div>
 	</div>
 
@@ -144,7 +146,7 @@
 		</div>
 
 		<div class="text-center">
-		  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalSubscriptionForm">Add New Group Member</a>
+		  <a href="" class="btn btn-default btn-rounded mb-4" id="addTeammateBtn" data-toggle="modal" data-target="#modalSubscriptionForm">Add Teammate!</a>
 		</div>
 		</nav>
 
