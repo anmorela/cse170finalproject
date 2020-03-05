@@ -8,16 +8,17 @@ body {
     position: absolute;
     margin: 0;
     top: 39%;
-    left: 94%;
+    left: 92%;
 }
 
 .classes {
-    color: #aeadac !important;
     border: 1px solid;
     border-radius: 15px;
     margin: 23px 15px;
     padding: 28px auto 27px 14px;
     position: relative;
+    box-shadow: 2px 2px 5px grey;
+    color: #30343F !important;
 }
 
 .login{
@@ -34,7 +35,10 @@ body {
 
 .course_title  {
     margin: 28px auto 0 14px;
-    font-size: 22px;
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
 }
 
 .facebookLogin {
@@ -61,7 +65,10 @@ body {
 
 .professor  {
     margin: 0px auto 27px 14px;
-    font-size: 15px;
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: medium;
 }
 
 #facebookButton {
@@ -76,4 +83,12 @@ body {
     display: block;
     max-width: 85%;
 
+}
+
+#appName {
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: x-large;
+    color: #4A6D7C;
 }
