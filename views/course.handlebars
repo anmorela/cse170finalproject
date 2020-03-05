@@ -11,16 +11,14 @@
 <body>
 	<nav class="navbar fixed-top navbar-dark bg-dark" role="navigation">
 		<button id="goHome" onclick="window.location.href='/homepage'" class="btn btn-light">Back</button>
-		<a class="navbar-brand" id="courseTitle" style="color: white;">{{title}}</a>
+		<a class="navbar-brand" id="courseTitle" style="color: white;">My {{title}} Groups</a>
 		<!-- Button to add a new group -->
 		<button id="addGroup" onclick="window.location.href='/{{title}}/addGroup'" class="btn btn-light" type="button">Add Group</button>
 	</nav>
 	<div class="container">
-		<h2>My Groups</h2>
-
 		<!-- Display the groups for the course -->
 		{{#each groups}}
-		<a id="group"  href="../groupPage/{{name}}" class="thumbnail">
+		<a id="group"  href="../groupPage/{{name}}" class="thumbnail groupContainer">
 			<img src="{{imageURL}}" alt="GroupImage" class="img-responsive img-rounded">
 			<h4 style="color: #333">{{name}}</h4>
 		</a>

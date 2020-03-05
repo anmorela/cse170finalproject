@@ -31,9 +31,10 @@
 		</nav>
 	<div class="container">
 		<h3>Uploaded Work</h3>
+		<br>
 		<!--Button to Upload Work-->
-		<p><input type="file"  accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
-		<p><label for="file" style="cursor: pointer;">Click Here To Upload Your Work</label></p>
+		<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+		<div style="display: flex; justify-content: center;"><button class="btn btn-default btn-md"><label for="file">Upload Your Work</label></button></div>
 		<script>
 			
 			var loadFile = function(event) {
@@ -42,6 +43,8 @@
 			image.src = "https://miro.medium.com/max/1280/1*chMOsXhcua6_J18z7lNRXA.png";
 			};
 		</script>
+
+		<br>
 
 		<!--Comment Button and Image Output-->
 		<div class="thumbnail">
@@ -152,10 +155,11 @@
 	<div class="container">
 		<h3>Uploaded Work</h3>
 
-		<br><br>
+		<br>
 		<!--Button to Upload Work-->
 		<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-		<button class="btn btn-default btn-md"><p style="text-align: center"><label for="file" style="cursor: pointer;">Upload Your Work</label></p></button>
+		<div style="display: flex; justify-content: center;"><button class="btn btn-default btn-md"><label for="file">Upload Your Work</label></button></div>
+
 		<script>
 			var loadFile = function(event) {
 			var image = document.getElementById('output');
@@ -165,6 +169,9 @@
 			console.log(image.src);
 			};
 		</script>
+
+
+		<br>
 
 		<!--Comment Button and Image Output-->
 		<div class="thumbnail">
