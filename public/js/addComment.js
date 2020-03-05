@@ -9,9 +9,8 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	console.log("Javascript connected!");
-
-  $("#addTeammateBtn").click(clickAddBtn);
+  console.log("Javascript connected!");
+  
 
   if ($("#commentList").text() == "[object Object]") {
     console.log("WORKS");
@@ -28,11 +27,15 @@ function initializePage() {
 
 }
 
-function clickAddBtn(e) {
-  e.preventDefault();
+$("#addTeammateBtn").click(clickAddBtn());
+
+
+function clickAddBtn() {
+  //e.preventDefault();
   var timeSinceLoad = Math.round(performance.now());
-  ga('create', 'UA-159497797-1', 'auto');
+  //ga('create', 'UA-159497797-1', 'auto'); 
   ga('send', 'timing', 'addTeammate', 'click', timeSinceLoad);
+  console.log(performance.now());
 }
   
 
