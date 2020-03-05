@@ -59,10 +59,6 @@ body {
     background-color: #334255;
 }
 
-#{
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .professor  {
     margin: 0px auto 27px 14px;
     font-size: 15px;

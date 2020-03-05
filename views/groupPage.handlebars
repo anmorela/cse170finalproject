@@ -3,6 +3,7 @@
 	<title>Group Page</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/CoursePage.css" rel="stylesheet">
@@ -16,20 +17,19 @@
 
 		ga('create', 'UA-159497797-1', 'auto');
 		ga('require', 'GTM-KF48SKT');
-		ga('send', 'pageview');
+		ga('send', 'timing');
 	</script>
 	<!-- End Google Analytics -->
 </head>
 <body>
 	{{#if viewAlt}}
-
-	<div class="container">
-		<nav>
+	
+		<nav class="navbar fixed-top navbar-dark bg-dark" role="navigation">
+			<a class="navbar-brand" style="color:white">{{title}}</a>
 				<!-- Button to return to the course page of that group -->
 			<button id="backCourse" class="btn btn-default btn-md" onclick="window.location.href='/course/{{course}}'">Back</button>
 		</nav>
-
-		<h1>{{title}}</h1><br>
+	<div class="container">
 		<h3>Uploaded Work</h3>
 		<!--Button to Upload Work-->
 		<p><input type="file"  accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
@@ -105,13 +105,13 @@
 
 {{else}}
 
-	<div class="container">
-		<nav>
+		<nav class="navbar fixed-top navbar-dark bg-dark" role="navigation">
 				<!-- Button to return to the course page of that group -->
 			<button id="backCourse" class="btn btn-default btn-md" onclick="window.location.href='/course/{{course}}'">Back</button>
+			<a class="navbar-brand" style="color: white; position: relative; left: 60px;">{{title}}</a>
 
 			<!-- Button to find teammates -->
-		<div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="position: absolute; top: 7px; right: 7px;">
+		<div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header text-center">
@@ -146,17 +146,16 @@
 		</div>
 
 		<div class="text-center">
-		  <a href="" class="btn btn-default btn-rounded mb-4" id="addTeammateBtn" data-toggle="modal" data-target="#modalSubscriptionForm">Add Teammate!</a>
+		  <a href="" class="btn btn-default btn-rounded mb-4" id="addTeammateBtn" data-toggle="modal" data-target="#modalSubscriptionForm" style="position: absolute; top: 12px; right: 12px;">Add Teammate!</a>
 		</div>
-		</nav>
-
-		<h1>{{title}}</h1><br>
+	</nav>
+	<div class="container">
 		<h3>Uploaded Work</h3>
 
 		<br><br>
 		<!--Button to Upload Work-->
 		<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-		<p style="text-align: center"><label for="file" style="cursor: pointer;">Click Here To Upload Your Work</label></p>
+		<button class="btn btn-default btn-md"><p style="text-align: center"><label for="file" style="cursor: pointer;">Upload Your Work</label></p></button>
 		<script>
 			var loadFile = function(event) {
 			var image = document.getElementById('output');
@@ -190,6 +189,9 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
     <script src="/js/addComment.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 
