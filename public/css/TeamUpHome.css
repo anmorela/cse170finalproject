@@ -43,6 +43,12 @@ body {
     color: #aeadac;
 }
 
+#addCourseButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
 .fb-login-button{
    display: block;
    left: 25%;
@@ -57,51 +63,9 @@ body {
     font-family: 'Courier New', Courier, monospace
 }
 
-
-
-/*
-.nav li {
-    display: inline;
-    color: #aeadac;
-}
-
-.navbar, .navbar-inverse {
-    border-radius: 0;
-    border: none;
-    margin-bottom: 0;
-    min-height: 50px;
-    color: #aeadac;
-}
-
-.navbar-header {
-    font-family: thin;
-}
-
-.navbar-inverse .navbar-nav li a:hover {
-    background-color: #aeadac;
-    transition: 0.7s all linear;
-    height: 100%;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    color: #aeadac;
-    font-family: thin;
-    font-size: 1.7em;
-    font-weight: 300;
-    padding: 30px 25px 33px 25px;
-}
-*/
-
 .professor  {
     margin: 0px auto 27px 14px;
     font-size: 15px;
-}
-
-#appTitle{
-    text-align: center;
-    padding-top: 5px;
-    font-size: 28px;
-    color: #aeadac;
 }
 
 #facebookButton {
@@ -110,35 +74,9 @@ body {
     padding-top: 10px;
 }
 
-#homepage {
-    text-align: center;
-    font-family: thin;
-    color: #aeadac;
-}
-
 #logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-}
-
-#menu {
-    background-color: #aeadac;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin-bottom: 60px;
-}
-
-#plusIcon{
-    float: right;
-    position: relative; 
-    top: 9px; 
-    right: 19px;
-    background-color: #aeadac;
-}
-
-#title {
-    text-align: center;
 }

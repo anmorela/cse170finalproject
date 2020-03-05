@@ -10,21 +10,10 @@
 </head>
 <body>
 	<nav class="navbar fixed-top navbar-dark bg-dark" role="navigation">
-		<div class = "navbar">
-    	<!--<div class="navbar-header" style="background-color: #ffffff;">-->
-      		<!-- <button type="button" class="navbar-toggle collapsed" style="float: left; border-color: #2b669a; background-color: #333; position: relative; top: 2px; left: 19px" data-toggle="collapse" data-target="#collapse-1">
-	        	<span class="sr-only">Toggle navigation</span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-      		</button>-->
-			<a class="navbar-brand" href="#">TeamUp</a>
-			<button type="button" class="btn btn-light"  onclick="window.location.href='addCourse'" style="position: relative; float: right;">Add Course</button>
-      	<!--	<button id="plusIcon" class="btn btn-default btn-md" onclick="window.location.href='addCourse'">Add Course</button>
-	    -->
-		</nav>
-
-	</div>
+		<a class="navbar-brand" href="#">TeamUp</a>
+		<button id="addCourseButton" type="button" class="btn btn-light"  onclick="window.location.href='addCourse'" style="float: right;">Add Course</button>
+	</nav>
+	
 	<div class="content container-sm">
 		{{#each courses}}
 			<a href="course/{{title}}">
