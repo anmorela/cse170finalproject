@@ -11,6 +11,8 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
 
+  $("#addTeammateBtn").click(clickAddBtn);
+
   if ($("#commentList").text() == "[object Object]") {
     console.log("WORKS");
     $("#commentList").html("<p><h5>Add Your Feedback Below!</h5></p>");
@@ -23,5 +25,15 @@ function initializePage() {
     $("#commentList").html(formatComment);
 
   }
-  
+
 }
+
+function clickAddBtn(e) {
+  e.preventDefault();
+  var timeSinceLoad = Math.round(performance.now());
+  ga('create', 'UA-159497797-1', 'auto');
+  ga('send', 'timing', 'addTeammate', 'click', timeSinceLoad);
+}
+  
+
+

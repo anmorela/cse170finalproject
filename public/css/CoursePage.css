@@ -3,8 +3,8 @@ h1, h2, h3, h4 {
 }
 
 #homepage {
-    font-family: thin;
-	color: #aeadac;
+    font-family: "Laski Sans Extra Light";
+    color: #aeadac;
 }
 
 .navbar, .navbar-inverse {
