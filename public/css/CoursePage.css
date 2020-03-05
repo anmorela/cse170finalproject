@@ -36,16 +36,15 @@ h1, h2, h3, h4 {
 
 
 #goHome, #backCourse {
-	position: relative;
-	top: 7px;
-	left: 7px;
+	position: absolute;
+	top: 12px;
+	left: 12px;
 }
 
-#addGroup, #addTeammate {
+#addTeammate {
 	position: relative;
-	float: right;
-	top: 7px;
-	right: 7px;
+	top: 12px;
+	right: 12px;
 }
 
 #addTeamTitle {
@@ -75,3 +74,12 @@ h1, h2, h3, h4 {
 	font-family: thin;
 }
 
+#addGroup{
+	position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+#courseTitle {
+	font-family: 'Courier New', Courier, monospace;
+}
