@@ -11,24 +11,6 @@
           {}]
       },
       {
-		"course": "COGS120",
-        "title": "GroupB",
-        "img": "https://media.nngroup.com/media/editor/2018/06/20/basic-storyboard.png",
-        "comments": [
-          {}],
-        "members": [
-          {}]
-      },
-      {
-		"course": "COGS120",
-        "title": "GroupC",
-        "img": "https://miro.medium.com/max/2060/0*K5476VixXhddhBkA.jpg",
-        "comments": [
-          {}],
-        "members": [
-          {}]
-      },
-      {
 		"course": "COGS107B",
         "title": "GroupD",
         "img": "https://emotiv-website-uploads-live.s3.amazonaws.com/uploads/2019/07/cognitive-neuroscience-brain-diagram.jpg",
