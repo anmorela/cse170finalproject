@@ -24,6 +24,7 @@ function statusChangeCallback(response) {
     $("#logo").attr("src", response.picture.data.url);
     $(".facebookLogin").hide();
     $("#welcome").text("Hello!");
+    $(".welcomeText").html("<a href='../homepage'>Continue</a>");
 
   }
 }
