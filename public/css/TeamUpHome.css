@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #30343F;
 }
 
 .chevron   {
@@ -18,7 +18,8 @@ body {
     padding: 28px auto 27px 14px;
     position: relative;
     box-shadow: 2px 2px 5px grey;
-    color: #30343F !important;
+    color: #62929E !important;
+    background-color: white;
 }
 
 .login{
@@ -50,7 +51,7 @@ body {
 #addCourseButton {
     position: absolute;
     top: 12px;
-    right: 12px;
+    right: 9px;
 }
 
 .fb-login-button{
@@ -90,5 +91,5 @@ body {
     font-weight: 800;
     font-style: normal;
     font-size: x-large;
-    color: #4A6D7C;
+    color: white;
 }

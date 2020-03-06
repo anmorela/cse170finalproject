@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Group Page</title>
@@ -29,11 +30,13 @@
 				<!-- Button to return to the course page of that group -->
 			<button id="backCourse" class="btn btn-default" onclick="window.location.href='/course/{{course}}'">Back</button>
 		</nav>
-	<div class="container">
+		<div class="container">
 			<div class="navbar-brand" style="display: flex; justify-content: center; width: 100%;">
 			<p class="groupTitle">{{title}}</p>
 		</div>
+
 		<br>
+		
 		<!--Button to Upload Work-->
 		<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
 		<div style="display: flex; justify-content: center; width: 100%;"><button class="btn btn-default"><label for="file">Upload Your Work</label></button></div>
