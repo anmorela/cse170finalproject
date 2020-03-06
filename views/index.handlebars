@@ -21,8 +21,11 @@
 		<br>
 		<p class="facebookLogin">Click Below to Get Started!</p>
 		<div class="welcomeText">
-			<div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" 
-			 data-auto-logout-link="false" data-use-continue-as="false"></div>
+			<!-- <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" 
+			 data-auto-logout-link="false" data-use-continue-as="false"></div> -->
+
+			 <fb:login-button class="fb-login-button" scope="public_profile,email" onlogin="checkLoginState();">
+				</fb:login-button>
 		</div>
 	</div>
 </body>
