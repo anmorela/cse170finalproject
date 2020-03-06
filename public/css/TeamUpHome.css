@@ -28,6 +28,8 @@ body {
 
 .welcomeText{
     padding-top:25px;
+    display: flex;
+    justify-content: center;
 
 }
 .content {
@@ -45,7 +47,7 @@ body {
 .facebookLogin {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
+    color: #30343F;
 }
 
 #addCourseButton {
@@ -56,12 +58,11 @@ body {
 
 .fb-login-button{
    display: block;
-   left: 25%;
-   right: auto;
+   justify-content: center;
 }
 
 .loginPage {
-    background-color: #334255;
+    background-color: white !important;
 }
 
 .professor  {
@@ -73,7 +74,7 @@ body {
 }
 
 #facebookButton {
-    text-align: center;
+    justify-content: center;
     margin: auto;
     padding-top: 10px;
 }
