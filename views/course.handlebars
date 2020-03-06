@@ -12,7 +12,7 @@
 <body>
 	<nav class="navbar fixed-top" role="navigation">
 		<button id="goHome" onclick="window.location.href='/homepage'" class="btn btn-light">Back</button>
-		<a class="navbar-brand courseTitle">My {{title}} Groups</a>
+		<a class="navbar-brand courseTitle">{{title}} Groups</a>
 		<!-- Button to add a new group -->
 		<button id="addGroup" onclick="window.location.href='/{{title}}/addGroup'" class="btn btn-light" type="button">Add Group</button>
 	</nav>
@@ -21,7 +21,7 @@
 		{{#each groups}}
 		<a id="group"  href="../groupPage/{{name}}" class="thumbnail groupContainer">
 			<img src="{{imageURL}}" alt="GroupImage" class="img-responsive img-rounded">
-			<h4 class= "cPageGName">{{name}}</h4>
+			<h4 class= "cPageGName"><u>{{name}}</u></h4>
 		</a>
 		{{/each}}
 	</div>
