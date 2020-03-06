@@ -14,7 +14,7 @@ function initializePage() {
 
   if ($("#commentList").text() == "[object Object]") {
     console.log("WORKS");
-    $("#commentList").html("<p><h5>Add Your Feedback Below!</h5></p>");
+    $("#commentList").html("<p style='text-align: center;'>There's no feedback on this assignment! Comment below to add your feedback!</p>");
   }
 
   else {
