@@ -27,7 +27,7 @@
 	
 		<nav class="navbar fixed-top" role="navigation">
 				<!-- Button to return to the course page of that group -->
-			<button id="backCourse" class="btn btn-light" onclick="window.location.href='/course/{{course}}'">Back</button>
+			<button id="backCourse" class="btn btn-default" onclick="window.location.href='/course/{{course}}'">Back</button>
 		</nav>
 	<div class="container">
 			<div class="navbar-brand" style="display: flex; justify-content: center; width: 100%;">
@@ -36,7 +36,7 @@
 		<br>
 		<!--Button to Upload Work-->
 		<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-		<div style="display: flex; justify-content: center; width: 100%;"><button class="btn btn-light"><label for="file">Upload Your Work</label></button></div>
+		<div style="display: flex; justify-content: center; width: 100%;"><button class="btn btn-default"><label for="file">Upload Your Work</label></button></div>
 		<script>
 			
 			var loadFile = function(event) {
@@ -51,20 +51,19 @@
 		<!--Comment Button and Image Output-->
 		<div class="thumbnail">
 			<h3>Give Feedback!</h3>
-			<div class="thumbnail">
-			<p id="commentList">{{comments}}</p>
-			</div>
 			<form id="addCommentForm" role="form" method="get" action="/addComment">	
 	    		<div class="form-group">
 
 				<p><img id="output" class="img-responsive" src="https://miro.medium.com/max/1280/1*chMOsXhcua6_J18z7lNRXA.png"/></p>
-
+				<div class="thumbnail">
+					<p id="commentList">{{comments}}</p>
+				</div>
 	      			<label for="comment">Feedback:</label>
 	      			<input type="text" class="form-control" id="comment" placeholder="Your feedback here" name="comment">
 	   		 	</div>
 				<input type="hidden" name="grouptitle" value="{{title}}">
 				<input type="hidden" name="groupimg" value="{{img}}">
-	    		<input type="submit" id="submitBtn" class="btn btn-light" value="Leave comment"></input>
+	    		<input type="submit" id="submitBtn" class="btn btn-default" value="Leave comment"></input>
 			</form>
 		</div>
 					<!-- Button to find teammates -->
@@ -104,7 +103,7 @@
 
 		<br><br><br>
 		<div class="text-center">
-		  <a href="" class="btn btn-light" id="addTeammateBtn" data-toggle="modal" data-target="#modalSubscriptionForm" style="position: relative; float: right; bottom: 7px; right: 7px;">Add Teammate!</a>
+		  <a href="" class="btn btn-default" id="addTeammateBtn" data-toggle="modal" data-target="#modalSubscriptionForm" style="position: relative; float: right; bottom: 7px; right: 7px;">Add Teammate!</a>
 		</div>
 	</div>
 
@@ -112,10 +111,10 @@
 
 	<nav class="navbar fixed-top" role="navigation">
 				<!-- Button to return to the course page of that group -->
-			<button id="backCourse" class="btn btn-light" onclick="window.location.href='/course/{{course}}'">Back</button>
+			<button id="backCourse" class="btn btn-default" onclick="window.location.href='/course/{{course}}'">Back</button>
 
 		<div class="text-center">
-		  <a href="" class="btn btn-light" id="addTeammateBtn" data-toggle="modal" data-target="#modalSubscriptionForm" style="position: absolute; top: 12px; right: 9px;">Add Teammate!</a>
+		  <a href="" class="btn btn-default" id="addTeammateBtn" data-toggle="modal" data-target="#modalSubscriptionForm" style="position: absolute; top: 12px; right: 9px;">Add Teammate!</a>
 		</div>
 	</nav>
 
@@ -163,7 +162,7 @@
 		<br><br>
 		<!--Button to Upload Work-->
 		<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-		<div style="display: flex; justify-content: center; width: 100%;"><button class="btn btn-light"><label for="file">Upload Your Work</label></button></div>
+		<div style="display: flex; justify-content: center; width: 100%;"><button class="btn btn-default"><label for="file">Upload Your Work</label></button></div>
 
 		<script>
 			var loadFile = function(event) {
@@ -181,18 +180,18 @@
 		<!--Comment Button and Image Output-->
 		<div class="thumbnail">
 			<h3>Give Feedback!</h3>
-			<div class="thumbnail">
-			<p id="commentList">{{comments}}</p>
-			</div>
 			<form id="addCommentForm" role="form" method="get" action="/addComment">	
 	    		<div class="form-group">
 				<p><img id="output" class="img-responsive" src="https://miro.medium.com/max/1280/1*chMOsXhcua6_J18z7lNRXA.png"/></p>
+				<div class="thumbnail">
+					<p id="commentList">{{comments}}</p>
+				</div>
 	      			<label for="comment">Feedback:</label>
 	      			<input type="text" class="form-control" id="comment" placeholder="Your feedback here" name="comment">
 	   		 	</div>
 				<input type="hidden" name="grouptitle" value="{{title}}">
 				<input type="hidden" name="groupimg" value="{{img}}">
-	    		<input type="submit" id="submitBtn" class="btn btn-light" value="Leave comment"></input>
+	    		<input type="submit" id="submitBtn" class="btn btn-default" value="Leave comment"></input>
 			</form>
 		</div>
 	</div>
