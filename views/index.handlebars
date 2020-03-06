@@ -20,13 +20,15 @@
 			<img id="logo" class='img-responsive' src="/images/logo.png"/>
 		</div>
 		<br>
-		<p class="facebookLogin">Click Below to Get Started!</p>
+		<p class="facebookLogin">Click Below to Get Started!
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+				</fb:login-button>
+		</p>
 		<div class="welcomeText">
 			<!-- <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" 
 			 data-auto-logout-link="false" data-use-continue-as="false"></div> -->
 
-			 <fb:login-button class="fb-login-button" scope="public_profile,email" onlogin="checkLoginState();">
-				</fb:login-button>
+			
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery.js"></script>
